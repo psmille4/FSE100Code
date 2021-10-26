@@ -1,0 +1,29 @@
+function setup() {
+  createCanvas(400, 400);
+  
+}
+
+function draw() {
+  let sqx;
+  let sqy;
+  let whacked = false;
+  
+  background(220);
+  fill(200, 50, 50)
+  circle(80, 80, 80);
+  fill(50,200,50)
+  circle(320, 80, 80);
+  fill(50,50,200)
+  circle(80, 320, 80);
+  fill(250, 50, 250)
+  circle(320, 320, 80);
+  fill(250, 250, 50)
+  circle(200, 200, 80)
+  fill (1)
+  square(80, 200, 40);
+  
+  if (whacked) {
+    sqx 
+  }
+}
+
