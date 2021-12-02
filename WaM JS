@@ -1,0 +1,55 @@
+import java.util.Scanner;
+import java.util.Random;
+
+class whackAMole
+{
+   public static void main(String[] args)
+   {
+   
+   boolean gameGoing = true;
+   
+   int speed;
+   Random randX = new Random();
+   Random randY = new Random();
+   int randomX = randX.nextInt(3);
+   int randomY = randY.nextInt(2);
+   int size = 0;
+   String input;
+   
+   System.out.print("Choose 'E'asy, 'M'edium, or 'H'ard\n");
+   Scanner myScan = new Scanner(System.in);
+   char choice = 'E';
+  //game structure
+      do 
+        { 
+         input = myScan.nextLine();
+          choice = input.charAt(0);
+      
+         switch(choice)
+         {
+            case 'E','e' :
+            System.out.print("\nYou chose easy mode");
+            squareSize = 300;
+            break;
+            
+            case 'M','m':
+            System.out.print("\nYou chose medium mode");
+            squareSize = 200;
+            break;
+            
+            case 'H','h':
+            System.out.print("\nYou chose hard mode");
+            squareSize = 100;
+            break;
+            
+            default: 
+            System.out.print("\nError, unexpected input");
+            break; 
+            
+         }//end switch
+       } while(choice != 'Q'); //end while
+      
+      System.out.print("\nChoose another difficulty or press 'Q' to quit");
+      System.out.print("Size is " + size);
+   }//end main
+}//end class
